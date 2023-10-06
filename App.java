@@ -4,6 +4,7 @@ public class App {
     private static final Scanner inputScanner = new Scanner(System.in);
     public static void main(String[] args){
          Calculator calculator = new Calculator();
+
         while(true){
             String operation = menu();
             if(operation.equals("exit")){
@@ -35,7 +36,7 @@ public class App {
         }
     }
     private static String menu(){
-        List<String> options = List.of("add", "subtract", "multiply", "divide");
+        List<String> options = List.of("add", "subtract", "multiply", "divide", "exit");
 
         String selection = "";
         while (!options.contains(selection)){
